@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <title> NetFlix </title>
+</head>
+<body>
+
+
+    <div class = "header">
+        <a href="#">NETFLIX</a>
+        <input type = 'text' class = "searchBox" placeholder="Search Series" id = "_searchBox" />
+    </div>
+    <div id = "cardsContainer" class = "cardContainer">
+    </div>
+    <div class="hidden noResult" id = "_noResultContainer">
+        <img src="assets/img/alert.png" id = "_alert"></img>
+        <div>Nothing to show</div>
+    </div>
+
+
+
+    <div id="trailerDiv" class="trailerDiv hidden">
+        <div class="selectedInfor">
+            <div class="title" id = "_title"></div>
+            <div class = "year" id="_year"></div>
+            <div class="rating">
+                <span>Rating</span><br>
+                <span id="_rating"></span>
+            </div>
+            <div class="imageContainer">
+                <img id="_selectedImage" src=""></img>
+            </div>
+            <div class="description" id = "_description"></div>
+            <div class = "cancel" id = "_cancel"></div>
+        </div>
+        <iframe id="_trailerIframe" src="" frameborder="0" allowfullscreen=""></iframe> 
+    </div>    
+
+
+        
+
+
+    <script type="text/javascript" src="js/utility.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+
+
+
+
+</body>
+</html>
